@@ -11,8 +11,6 @@ steps:
   integration_test:
       type: composition
       composition:
-        version: '2'
-        services:
           db:
             image: postgres
       composition_candidates:
