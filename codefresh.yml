@@ -1,0 +1,21 @@
+version: '1.0'
+
+steps:
+  build_prj:
+    type: build
+    description: UC - build step
+    image_name: codefreshio/yaml-example-integration-test
+    dockerfile: Dockerfile
+    tag: ${{CF_BRANCH}}
+
+  integration_test:
+      type: composition
+      composition:
+        version: '2'
+        services:
+          db:
+            image: postgres
+      composition_candidates:
+        test:
+          image: ${{build_prj}}
+          command: npm test
