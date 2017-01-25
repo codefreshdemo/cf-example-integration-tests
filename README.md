@@ -1,1 +1,3 @@
 # cf-example-integration-tests
+
+[![Codefresh build status]( https://g.codefresh.io/api/badges/build?repoOwner=codefreshdemo&repoName=cf-example-integration-tests&branch=master&pipelineName=cf-example-integration-tests&accountName=nikolai&type=cf-1)]( https://g.codefresh.io/repositories/codefreshdemo/cf-example-integration-tests/builds?filter=trigger:build;branch:master;service:58395e05790f900100343c27~cf-example-integration-tests)
