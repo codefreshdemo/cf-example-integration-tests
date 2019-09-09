@@ -1,0 +1,17 @@
+version: '2'
+services:
+  my_tests:
+    build:
+      context: ./
+      dockerfile: Dockerfile.testing
+    links:
+      - app
+    command: bash -c '/usr/bin/wait-for-it.sh -t 60 app:8080 -- mvn verify -Dserver.host=app' 
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8080"
+
+
