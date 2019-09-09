@@ -3,7 +3,7 @@
 This is an example Java application that uses Spring and Tomcat to run.
 It is compiled using Codefresh.
 
-## Running the app
+## Running the app 
 
 To compile and package using Docker 
 
@@ -12,9 +12,9 @@ docker build . -t my-app
 docker run -p 8080:8080 my-app
 ```
 
-Then enter http://localhost:8080 on your browser
+Then enter http://localhost:8080/wizard/ on your browser
 
-## Running the integration tests
+## Running the integration tests locally
 
 To compile and package using Docker compose
 
